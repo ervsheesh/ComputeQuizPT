@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" id="design">
+<head>
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
+    
+    <!-- Viewport setting for responsiveness on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title of the webpage that appears in the browser tab -->
+    <title>Computation of Gradez</title>
+    
+    <!-- External CSS file linked to style the form and its elements -->
+    <link rel="stylesheet" href="ComputeStyle.css">
+</head>
+<body>
+    <!-- The form containing the grade computation fields and buttons -->
+    <form action="" class="name">
+        <table>
+            <!-- First table row for the title of the form -->
+            <tr>
+                <td colspan="3" style="text-align: center; background-color: rgb(114, 195, 223);">
+                    <h3 style="margin: 0;">Computation of Grades</h3>
+                </td>
+            </tr>
+
+            <!-- Header for the Written Tasks section -->
+            <th colspan="3"><b>WRITTEN TASKS</b></th>
+
+            <!-- Row for entering Quiz 1 scores -->
+            <tr>
+                <td>Quiz 1</td>
+                <td><input type="text" id="firsts"></td>  <!-- Input field for the first quiz score -->
+                <td><input type="text" id="1"></td>      <!-- Additional input field for Quiz 1 -->
+            </tr>
+
+            <!-- Row for entering Quiz 2 scores -->
+            <tr>
+                <td>Quiz 2</td>
+                <td><input type="text" id="seconds"></td> <!-- Input field for the second quiz score -->
+                <td><input type="text" id="2"></td>      <!-- Additional input field for Quiz 2 -->
+            </tr>
+
+            <!-- Row for entering Quiz 3 scores -->
+            <tr>
+                <td>Quiz 3</td>
+                <td><input type="text" id="thirds"></td> <!-- Input field for the third quiz score -->
+                <td><input type="text" id="3"></td>      <!-- Additional input field for Quiz 3 -->
+            </tr>
+
+            <!-- Button to compute the quiz scores and output the results -->
+            <tr>
+                <td><input type="button" value="Compute Quizzes" id="bnt"></td>  <!-- Button to trigger quiz computation -->
+                <td><input type="text" id="outputs" disabled ></td>  <!-- Disabled field for computed result -->
+                <td><input type="text" id="output" disabled ></td>   <!-- Another disabled field for result -->
+            </tr>
+
+            <!-- Header for the Performance Tasks section -->
+            <th colspan="3"><b>PERFORMANCE TASKS</b></th>
+
+            <!-- Rows for entering Performance Task scores -->
+            <tr>
+                <td>Performance Tasks 1</td>
+                <td><input type="text" id="pts1"></td>  <!-- Input for Performance Task 1 -->
+                <td><input type="text" id="4"></td>     <!-- Additional input field for Task 1 -->
+            </tr>
+            <tr>
+                <td>Performance Tasks 2</td>
+                <td><input type="text" id="pts2"></td>  <!-- Input for Performance Task 2 -->
+                <td><input type="text" id="5"></td>     <!-- Additional input field for Task 2 -->
+            </tr>
+            <tr>
+                <td>Performance Tasks 3</td>
+                <td><input type="text" id="pts3"></td>  <!-- Input for Performance Task 3 -->
+                <td><input type="text" id="6"></td>     <!-- Additional input field for Task 3 -->
+            </tr>
+
+            <!-- Button to compute performance task scores and display results -->
+            <tr>
+                <td><input type="button" value="Compute Performance Task" id="bnts"></td>  <!-- Button to compute performance tasks -->
+                <td><input type="text" id="out" disabled></td>   <!-- Disabled field for output -->
+                <td><input type="text" id="outs" disabled></td>  <!-- Another disabled output field -->
+            </tr>
+
+            <!-- Rows for entering the Periodical Exam score -->
+            <tr>
+                <td rowspan="2"><input type="button" value="Periodical Exam 3" id="bn"></td>  <!-- Button to compute exam score -->
+                <td><input type="text" id="exams"></td> <!-- Input for exam score -->
+                <td><input type="text" id="10"></td>    <!-- Additional input for the exam -->
+            </tr>
+            <tr>
+                <td><input type="text" id="outpu" disabled></td>  <!-- Disabled output field for exam result -->
+                <td><input type="text" id="o" disabled></td>      <!-- Additional disabled output field -->
+            </tr>
+
+            <!-- Final row to compute the overall grade -->
+            <tr>
+                <td colspan="3">
+                    <input type="button" value="GRADE" id="b"> <!-- Button to compute the final grade -->
+                    <input type="text" id="grades" disabled>  <!-- Disabled field to show final grade -->
+                </td>
+            </tr>
+        </table>
+
+        <!-- A footer note to credit the programmers -->
+        <div class="programmers">
+    Programmed by:<br>
+    <strong>Hannah S. Mallari</strong><br>
+    <strong>Ervin John A. Pesidas</strong>
+</div>
+    </form>
+
+    <!-- External JavaScript file to handle the grade computations -->
+    <script src="Compute.js"></script>
+</body>
+</html>
